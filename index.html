@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Becky Beauty Boutique</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>💄 Becky Beauty Boutique</h1>
+      <p>Pick your favorite theme color:</p>
+      <div class="color-options">
+        <button onclick="setTheme('lavender')">Lavender</button>
+        <button onclick="setTheme('mint')">Mint</button>
+        <button onclick="setTheme('blush')">Blush</button>
+      </div>
+    </header>
+
+    <section class="products">
+      <h2>✨ Featured Products</h2>
+      <div class="product-list">
+        <div class="product" onclick="addToWishlist(this)">
+          <img src="listick.jpg" alt="Lipstick" />
+          <p>Matte Lipstick</p>
+          <span class="wish-label">💖 Added!</span>
+        </div>
+        <div class="product" onclick="addToWishlist(this)">
+          <img src="blush.jpg" alt="blush" />
+          <p>Rose Blush</p>
+          <span class="wish-label">💖 Added!</span>
+        </div>
+        <div class="product" onclick="addToWishlist(this)">
+          <img src="foundatio.jpg" alt="foundation" />
+          <p>Foundation</p>
+          <span class="wish-label">💖 Added!</span>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
